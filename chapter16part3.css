@@ -1,0 +1,42 @@
+#main{
+    height: 700px;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/image-photo/side-view-asphalt-road-nature-260nw-2122055081.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+
+.one{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    text-align: center;
+    margin-top: 240px;
+    font-size: 50px;
+    background-image: url(https://i.pinimg.com/originals/dc/19/e9/dc19e9b94a372ebc21ffeb7623d5632a.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: sample;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sample{
+    0%{
+ 
+        left: 0%;
+        top: 0%;
+    }
+    100%{
+    
+        left: 70%;
+        top: 0%;
+    }
+}

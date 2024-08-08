@@ -1,0 +1,317 @@
+#main{
+    background-color: lightseagreen;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.one{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    transition-property: all;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+    transition-delay: .5s;
+}
+
+.one:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+.two{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    transition-property: all;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+}
+
+.two:hover{
+    height: 150px;
+    width: 150px;
+}
+
+.three{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    transition-property: all;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+}
+
+.three:hover{
+    border-radius: 50%;
+}
+
+.four{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    /* transition-property: all;
+    transition-duration: .1s;
+    transition-direction: alternate;
+    transition-timing-function: linear; */
+
+    /* This is a shorthand property
+    👇👇👇 */
+
+    transition: all .1s linear;
+}
+
+.four:hover{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.subdiv{
+    background-color: lightseagreen;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+.five{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    color: white;
+}
+
+.five:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.six{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    color: white;
+}
+
+.six:hover{
+    transform: translate(/*left*/2cm, /*top*/3cm);
+    transition: 1s;
+}
+
+.seven{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.seven:hover{
+    transform: scale(/*left*/2, /*right*/2);
+    transition: 1s;
+}
+
+.eight{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.eight:hover{
+    transform: skew(/*x axis - */40deg, /*y axis | */20deg);
+    transition: 1s;
+}
+
+.subdiv-2{
+    background-color: lightseagreen;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.nine{
+    background-color: rgb(101, 90, 111);
+    height: 100px;
+    width: 100px;
+}
+
+.nine2:hover{
+    background-color: rgb(153, 44, 255);
+    height: 100px;
+    width: 100px; 
+    transform: perspective(500px) rotateX(50deg); 
+    transition: 1s;
+}
+
+.ten{
+    background-color: rgb(101, 90, 111);
+    height: 100px;
+    width: 100px;
+}
+
+.ten2:hover{
+    background-color: rgb(153, 44, 255);
+    height: 100px;
+    width: 100px; 
+    transform: perspective(500px) rotateY(50deg); 
+    transition: 1s;
+}
+
+.eleven{
+    background-color: rgb(101, 90, 111);
+    height: 100px;
+    width: 100px;
+}
+
+.eleven2:hover{
+    background-color: rgb(153, 44, 255);
+    height: 100px;
+    width: 100px; 
+    transform: perspective(500px) translateX(80px); 
+    transition: 4s;
+}
+
+.twelve{
+    background-color: rgb(101, 90, 111);
+    height: 100px;
+    width: 100px;
+}
+
+.twelve2:hover{
+    background-color: rgb(153, 44, 255);
+    height: 100px;
+    width: 100px; 
+    transform: perspective(500px) translateY(80px); 
+    transition: 4s;
+}
+
+.thirteen{
+    background-color: rgb(101, 90, 111);
+    height: 100px;
+    width: 100px;
+}
+
+.thirteen2:hover{
+    background-color: rgb(153, 44, 255);
+    height: 100px;
+    width: 100px; 
+    transform: perspective(500px) rotateY(50deg) translateZ(80px); 
+    transition: 2s;
+}
+
+.fourteen{
+    background-color: rgb(101, 90, 111);
+    height: 100px;
+    width: 100px;
+}
+
+.fourteen2:hover{
+    background-color: rgb(153, 44, 255);
+    height: 100px;
+    width: 100px; 
+    transform: perspective(500px) rotateX(50deg) translateZ(80px); 
+    transition: 2s;
+}
+
+.fifteen{
+    background-color: rgb(101, 90, 111);
+    height: 100px;
+    width: 100px;
+}
+
+.fifteen2:hover{
+    background-color: rgb(153, 44, 255);
+    height: 100px;
+    width: 100px; 
+    transform: perspective(700px) scale(0.5); 
+    transition: 2s;
+}
+
+.subdiv-3{
+    width: 100%;
+    height: 100px;
+    background-color: lightsalmon;
+    position: relative;
+}
+
+.sixteen{
+    background-color: rgb(137, 43, 226);
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    animation-name: sample;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sample{
+    0%{
+      left: 0%;
+      top: 0%;
+    }
+  100%{
+       left: 88%;
+       top: 0%;
+    }
+}
+
+.subdiv-4{
+    width: 100%;
+    height: 100px;
+    background-color: lightsalmon;
+}
+
+.seventeen{
+    background-color: rgb(137, 43, 226);
+    height: 100px;
+    width: 100px;
+    animation: example 5s alternate infinite linear;
+}
+
+@keyframes example{
+    from{
+        width: 100px;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+
+.subdiv-5{
+    width: 100%;
+    height: 100px;
+    background-color: lightsalmon;
+}
+
+.eighteen{
+    background-color: rgb(137, 43, 226);
+    height: 100px;
+    width: 100px;
+    animation: height 5s alternate infinite linear;
+}
+
+@keyframes height{
+    from{
+        width: 100px;
+        height: 0px;
+    }
+
+    to{
+        width: 100%;
+        height: 100%;
+    }
+}
